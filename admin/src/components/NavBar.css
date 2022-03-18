@@ -1,0 +1,123 @@
+nav {
+  background: linear-gradient(
+    180.29deg,
+    #64ce26 12.2%,
+    rgba(172, 201, 39, 0.25) 40.56%
+  );
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  position: relative;
+  z-index: 99;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 25px;
+  color: green;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.fas {
+  cursor: pointer;
+  height: 20px;
+  width: 25px;
+}
+
+/* .menu-icon .fa-items{
+    transform: rotate(360deg);
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-icon .fa-bars{
+    transform: rotate(180deg);
+    transition: all 0.2s ease-in-out;
+} */
+
+.menu-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-list li a {
+  font-weight: 500;
+  font-size: 25px;
+  color: green;
+  padding: 5px 10px;
+  margin-left: 20px;
+}
+
+.menu-list li a:hover,
+.menu-list li a.active {
+  background-color: #fff;
+  border-radius: 2px;
+  color: black;
+  transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 800px) {
+  .logo {
+    font-size: 20px;
+  }
+  .menu-list li a {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-head {
+    display: flex;
+    color: #fff;
+    position: relative;
+  }
+
+  .menu {
+    font-weight: 200;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-right: 10px;
+  }
+
+  .menu-list {
+    flex-direction: column;
+    width: 50%;
+    height: 200px;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    right: 0;
+    top: 70px;
+    border-width: 2px;
+    transition: all 0.2s ease-in-out;
+    align-items: flex-start;
+  }
+  .menu-list li {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .menu-list li a {
+    width: 100px;
+    /* display: block; */
+    margin: auto;
+    color: green;
+    font-size: larger;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    border-bottom: rgba(172, 201, 39, 0.25) 2px solid;
+  }
+  .menu-list.close {
+    right: -100%;
+    transition: all 0.2s ease-in-out;
+  }
+}
